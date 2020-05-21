@@ -1,36 +1,55 @@
-function standLine(string1, string2) {
-   // A1:
-   // R:
-   return string1;
+function standLine(num1, num2) {
+   // A1: sets up the array to count by tens
+   // A2: it pushes out the first number from the array which is registered with num1
+   // A3: the new number will place at the end of the array which is registered with num2
+   // R: will show the final product from the push and shift which is whatever the user inputs
+   var countByTens = [10, 20, 30, 40, 50, 60];
+   countByTens.push(num1);
+   countByTens.shift(num2);
+   return countByTens;
 }
-function shoppingList(string1, string2) {
-   // A1:
-   // A2:
-   // R:
-   return string1;
+function shoppingList(string1, num1) {
+   // A1: a list of computers
+   // A2: listing computer brands by best to worst
+   // R: a list of sub arrays consist of differnt kind of computer brands and their rankings. user will add new brand and quantity
+   var computers = [
+      [" hp ", 1],
+      [" dell ", 2],
+      [" acer ", 3],
+      [" toshiba ", 4],
+   ];
+   computers.push(string1, num1);
+   return computers;
 }
-function arrWithUnshift(string1, string2) {
-   // A1:
-   // A2:
-   // R:
-   return string1;
+function arrWithUnshift(string1) {
+   // A1: a list of array in vegetables
+   // R: adding the element at the start of the array
+   var vegetables = [" mushrooom ", " potato ", " lettuce "];
+   vegetables.unshift(string1);
+   return vegetables;
 }
-function arrWithShift(string1, string2) {
-   // A1:
-   // A2:
-   // R:
-   return string1([]);
+function arrWithShift(string1) {
+   // A1: a list of array in fruits
+   // R: it removes the first element and adds a new one with user input
+   var fruits = [" grapes ", " apples ", " oranges "];
+   fruits.shift(string1);
+   fruits.unshift(string1);
+   return fruits;
 }
-function arrWithPop(string1, string2) {
-   // A1:
-   // A2:
-   // R:
-   return string1.pop([]);
+function arrWithPop(string1) {
+   // A1: a list of arrays in ice cream
+   // R: removes the last element and adds a new one with user input
+   var iceCream = ["strawberry", "chocolate", "vanilla"];
+   iceCream.pop(string1);
+   iceCream.push(string1);
+   return iceCream;
 }
 function arrWithPush(string1) {
-   // A1:
-   // R:
-   return string1.push([]);
+   // A1:list the arrays in skittles
+   // R: adds the element in the end of the array
+   var skittles = ["red", "blue", "green"];
+   skittles.push(string1);
+   return skittles;
 }
 
 function nLastCharaString(string1) {
