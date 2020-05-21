@@ -1,6 +1,5 @@
 function standLine(string1, string2) {
    // A1:
-   // A2:
    // R:
    return string1;
 }
